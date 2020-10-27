@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="106px" height="77px" viewBox="0 0 106 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>airplane</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-7" transform="translate(-3542.000000, -1295.000000)">
+            <g id="airplane" transform="translate(3542.000000, 1295.000000)">
+                <polygon id="Fill-1584" fill="#F5F4F2" points="105.5515 0.0324 21.4835 53.4594 0.2875 33.4294"></polygon>
+                <polygon id="Fill-1586" fill="#B9B8B4" points="105.5515 0.0324 21.4835 53.4594 25.6375 76.8394 33.9325 57.6334"></polygon>
+                <polygon id="Fill-1588" fill="#71706C" points="25.6373 76.8399 33.9323 57.6339 43.0773 62.9069"></polygon>
+                <polygon id="Fill-1590" fill="#FFFFFF" points="105.5515 0.0324 33.9325 57.6334 67.7015 76.4834"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

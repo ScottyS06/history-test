@@ -1,0 +1,133 @@
+@import "../lib";
+
+// info view uses card-group from lib, overload card group here versus changing it there
+
+.join-section {
+  .join-header {
+    @include page-flex(column);
+    @include centerCol;
+    background-color: $color-blue;
+    color: white;
+    position: relative;
+    margin-top: 10vw;
+    padding: 0 5rem 2rem 5rem !important;
+
+    @include sm-max {
+      padding: 0 1.5rem 2rem 1.5rem !important;
+    }
+
+    &::before {
+      content: " ";
+      background-image: url("../assets/wave-imgs/bluewave-clip.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 13vw; // the 12 value is the aspect ratio of the wave
+      top: -12.6vw;
+      left: 0;
+      width: 100vw;
+      position: absolute;
+    }
+
+    &::after {
+      content: " ";
+      background-color: $color-blue;
+      height: 20vh;
+      width: 100vw;
+      position: absolute;
+      bottom: -19.9vh;
+      left: 0;
+      z-index: -1;
+
+      // display: none;
+    }
+
+    .join-view-text {
+      max-width: 750px;
+      margin-top: -5vw;
+      z-index: 1;
+
+      h2 {
+        font-size: $font-size-5 !important;
+      }
+    }
+
+    @include md {
+      &::after {
+        display: block;
+      }
+    }
+
+    .info-view-text {
+      color: white;
+      line-height: 25px;
+
+      h2 {
+        margin: 0 0 2rem 0;
+        padding-top: 2vh;
+        font-size: $font-size-4;
+        line-height: 3rem;
+        font-weight: 900;
+
+        @include sm-max {
+          font-size: 2rem;
+          margin-top: 2rem;
+        }
+      }
+
+      @include md {
+        max-width: 600px !important;
+      }
+    }
+
+    p {
+      font-weight: 400;
+    }
+
+    @include sm-max {
+      margin-top: 5rem;
+    }
+  }
+
+  .card {
+    @include md {
+      width: 40vw;
+    }
+
+    .join-btn {
+      display: block;
+      width: fit-content;
+      padding: 1rem 1.5rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: $font-text;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      color: white;
+      background: $color-pink;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .card-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $color-blue;
+    @include centerCol;
+    padding-bottom: 2rem;
+
+    @include md {
+      background-color: transparent;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      color: $color-blue;
+      font-weight: 900;
+    }
+  }
+}

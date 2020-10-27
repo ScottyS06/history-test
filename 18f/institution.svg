@@ -1,0 +1,17 @@
+<svg width="98px" height="85px" viewBox="0 0 98 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1195.000000, -691.000000)">
+        <g  transform="translate(1195.000000, 691.000000)">
+            <polygon  fill="#7FBA00" points="5 76 94 76 94 14 5 14"></polygon>
+            <path d="M48.4989366,44 C43.8049543,44 40,47.9599032 40,52.842309 L40,76 L57,76 L57,52.842309 C57,47.9599032 53.1929188,44 48.4989366,44"  fill="#F4F4F4"></path>
+            <path d="M74.5010634,44 C69.8070812,44 66,47.9599032 66,52.842309 L66,76 L83,76 L83,52.842309 C83,47.9599032 79.1950457,44 74.5010634,44"  fill="#F4F4F4"></path>
+            <path d="M23.5,44 C18.8054304,44 15,47.9599032 15,52.842309 L15,76 L32,76 L32,52.842309 C32,47.9599032 28.1945696,44 23.5,44"  fill="#F4F4F4"></path>
+            <polygon  fill="#BAD80A" points="5 78 93 78 93 76 5 76"></polygon>
+            <polygon  fill="#008A00" points="3 80 95 80 95 78 3 78"></polygon>
+            <polygon  fill="#BAD80A" points="1 82 96 82 96 80 1 80"></polygon>
+            <polygon  fill="#008A00" points="0 85 98 85 98 82 0 82"></polygon>
+            <polygon  fill="#7FBA00" points="48.6769415 0 20 15 77 15"></polygon>
+            <polygon  fill="#008A00" points="3 34 95 34 95 32 3 32"></polygon>
+            <polygon  fill="#008A00" points="3 17 95 17 95 15 3 15"></polygon>
+        </g>
+    </g>
+</svg>

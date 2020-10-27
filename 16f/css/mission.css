@@ -1,0 +1,200 @@
+body {
+	margin: 0px;
+
+}
+
+@font-face {
+	font-family: Nevis;
+	src: url(../fonts/nevis.ttf);
+	font-weight: bold;
+}
+
+
+/*
+/////////////////////
+/////// NAVBAR //////
+/////////////////////
+*/
+#navbar_container {
+	display: flex;
+
+  position: fixed;
+
+	width: calc(100vw - 40px);
+	height: 100px;
+	line-height: 100px;
+	padding: 40px 20px;
+	margin: 0;
+	color: white;
+
+ list-style-type: none;
+
+	z-index: 1000;
+}
+
+	#navbar_container li {
+		font-family: Nevis;
+		font-size: 150%;
+		list-style: none;
+		margin: 0 30px;
+	}
+
+		#navbar_container > li:nth-child(5) {
+			margin-left: auto;
+		}
+	#navbar_dubhacks_logo {
+		height: 100px;
+	}
+
+	.navbar_contact_link > a {
+		margin: 0 15px;
+		margin-bottom: -15px;
+	}
+
+		.navbar_contact_link > a > img {
+			height: 30px;
+
+			transition: padding-bottom 0.2s ease;
+		}
+
+			.navbar_contact_link > a > img:hover {
+				padding-bottom: 8px;
+			}
+
+/*
+/////////////////////
+////// MISSION //////
+/////////////////////
+*/
+#mission_container {
+	background: linear-gradient( to top left, #EA1B75, #F17D69);
+	color: white;
+	padding-top: 150px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+	#our_mission {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		position: relative;
+	}
+
+		#our_mission h1 {
+			color: white;
+			font-size: 66px;
+			font-family: Nevis;
+			letter-spacing: 1px;
+			z-index: 2;
+		}
+
+	#big_astronaut_placeholder {
+		width: 50vw;
+		height: 45vw;
+		line-height: 45vw;
+		background-color: rgba(0, 0, 0, 0.2);
+		margin-left: 25vw;
+		margin-right: 25vw;
+		margin-top: -180px;
+	}
+
+	.believe_connect_build {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		width: 56vw;
+		background: white;
+	    font-family: Nevis;
+	    color: rgb(242,34,117);
+		letter-spacing: 1px;
+
+		padding: 50px 22vw;
+
+		position: relative;
+		overflow: hidden;
+	}
+
+		.believe_connect_build div, .believe_connect_build ul {
+			display: flex;
+			justify-content: center;
+		}
+
+		#our_mission_title {
+			padding: 10px 15px;
+			border: black 3px solid;
+			background-color: white;
+			font-size: 150%;
+			margin: auto;
+			color: black;
+
+			text-align: center;
+		}
+
+		#believe {
+			color: rgb(242,34,117);
+			font-size: 40px;
+			padding-top: 50px;
+			letter-spacing: 1px;
+			text-align: center;
+		}
+
+		#airplane_container {
+			list-style: none;
+		    display: flex;
+		    padding: 0;
+		    justify-content: center;
+		}
+
+			#airplane_container li img {
+				height: 50px;
+				padding: 0 40px;
+			}
+
+		#statement {
+			font-style: Nevis;
+			color: black;
+			font-size: 25px;
+			margin-top: 40px;
+		}
+
+		#pink_logo {
+			height:100px;
+			width: 100px;
+			margin-top: 50px;
+			right: 25vw;
+		    position: absolute;
+		}
+
+
+
+
+/* TABLET */
+@media screen and (max-device-width: 1024px), (max-width: 1024px) {
+
+}
+
+
+/* MOBILE */
+@media screen and (max-device-width: 640px), (max-width: 640px) {
+	#navbar_container {
+		padding: 20px;
+	}
+
+	#navbar_container > li:nth-child(1) {
+		margin-left: 0px;
+	}
+
+	.in_page_links {
+		display: none;
+	}
+
+	.navbar_contact_link > a {
+		margin: 0;
+	}
+
+
+}

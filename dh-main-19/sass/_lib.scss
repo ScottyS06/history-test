@@ -1,0 +1,151 @@
+// _lib.scss is a library file that exposes unmaterialized css (does not compile to rules) for other files,
+// and should be imported wherever it is needed
+
+$color-pink: #ef60a3;
+$color-pink-pale: #ffc2df;
+$color-blue: #2b39bf;
+$color-purple-pale: #aeb6ff;
+$color-red: #ea4359;
+$color-red-pale: #ff90a0;
+$color-green: #58c5c3;
+$color-green-pale: #8ee3e2;
+$color-yellow: #fec447;
+$color-yellow-pale: #ffd884;
+$color-peach: #f38e84;
+$color-peach-pale: #feb9b2;
+$color-gradient: $color-pink, $color-blue, $color-red, $color-green,
+  $color-yellow, $color-peach;
+$character-gradient: $color-yellow, $color-green, $color-pink, $color-blue,
+  $color-red;
+$character-pale-gradient: $color-yellow-pale, $color-green-pale,
+  $color-pink-pale, $color-purple-pale, $color-peach-pale;
+
+$font-text: "DM Sans", sans-serif;
+$font-title: "Montserrat", sans-serif;
+$font-size-0: 0.75rem;
+$font-size-1: 1rem;
+$font-size-2: 1.333rem;
+$font-size-3: 1.777rem;
+$font-size-4: 2.369rem;
+$font-size-5: 2.369rem;
+$font-size-6: 3rem;
+
+$horiMargin: 1.3rem;
+
+// mix-ins and reusable formats
+@mixin transition($height) {
+  @for $i from 1 through length($color-gradient) {
+    &:nth-child(#{$i}) {
+      height: $height;
+      flex: length($color-gradient) - ($i - 1);
+      background-color: nth($color-gradient, $i);
+    }
+  }
+}
+
+// TODO: replace the transition mixin with this one
+@mixin colorGradient($gradient, $width, $height) {
+  @for $i from 1 through length($gradient) {
+    &:nth-child(#{$i}) {
+      rect {
+        height: $height;
+        width: $width;
+        background-color: nth($gradient, $i);
+      }
+    }
+  }
+}
+
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin page-flex($direction) {
+  @include flex($direction);
+  flex: 1;
+  flex-shrink: 0;
+}
+
+@mixin justContent {
+  padding: 0;
+  margin: 0;
+}
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+@mixin sm-max {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// custom sizes
+@mixin rwd($screen) {
+  @media (min-width: $screen+"px") {
+    @content;
+  }
+}
+
+@mixin centerCol($vertM: 0, $vertD: $vertM) {
+  padding: $vertM $horiMargin;
+
+  @include md {
+    padding: $vertD $horiMargin;
+  }
+}
+
+// if just using the default value, can use the `desktop-only` class as described in main
+@mixin desktopOnly($desktopDisplay: block) {
+  display: none;
+
+  @include md {
+    display: $desktopDisplay;
+  }
+}
+
+// if just using the default value, can use the `mobile-only` class as described in main
+@mixin mobileOnly($mobileDisplay: block) {
+  display: $mobileDisplay;
+
+  @include md {
+    display: none;
+  }
+}

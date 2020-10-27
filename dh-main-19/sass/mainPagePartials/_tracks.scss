@@ -1,0 +1,107 @@
+@import "../lib";
+
+.tracks-section {
+  .tracks-header {
+    @include page-flex(column);
+    @include centerCol();
+    background-color: $color-red-pale;
+    position: relative;
+    padding: 0 5rem !important;
+
+    @include sm-max {
+      padding: 0 2rem !important;
+    }
+
+    h2 {
+      @include sm-max {
+        font-size: 2rem !important;
+      }
+    }
+
+    &::before {
+      content: " ";
+      background-image: url("../assets/wave-imgs/peachwave-clip.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 14vw; // the 13 value is the aspect ratio of the wave
+      top: -12.8vw;
+      left: -5px;
+      right: -5px;
+      width: calc(100vw + 10px);
+      position: absolute;
+    }
+
+    &::after {
+      content: " ";
+      background-color: $color-red-pale;
+      height: 15vh;
+      width: 100vw;
+      position: absolute;
+      bottom: -14.9vh;
+      left: 0;
+      z-index: -1;
+
+      // display: none;
+    }
+
+    @include md {
+      &::after {
+        display: block;
+      }
+    }
+
+    .tracks-view-text {
+      color: black;
+      margin-top: 2rem;
+
+      h2 {
+        font-size: $font-size-5;
+        font-weight: 900;
+      }
+
+      @include md {
+        max-width: 55vw;
+      }
+    }
+  }
+
+  .card-group {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-red-pale;
+    @include centerCol;
+
+    @include md {
+      background-color: transparent;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0;
+    }
+
+    .card {
+      .card-header img {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        height: 3rem;
+        width: auto;
+      }
+
+      p {
+        width: 90%;
+      }
+
+      @include md {
+        p {
+          width: auto;
+        }
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      color: $color-red-pale;
+      font-weight: 800;
+    }
+  }
+}

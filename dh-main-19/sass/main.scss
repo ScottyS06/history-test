@@ -1,0 +1,80 @@
+@import "lib";
+@import "core";
+
+// sections of the page imported in order of occurence
+@import "nav";
+@import "mainPagePartials/landing";
+@import "mainPagePartials/info";
+@import "mainPagePartials/tracks";
+@import "mainPagePartials/characters";
+@import "mainPagePartials/schedule";
+@import "mainPagePartials/join";
+@import "mainPagePartials/sponsors";
+@import "footer";
+
+// base css for the entire page
+
+.flex-spacing {
+  flex: 1;
+}
+
+.mainTextBold {
+  font-family: $font-text;
+  font-weight: 500;
+}
+
+// specific styling
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.card {
+  @include flex(column);
+  position: relative;
+  min-width: 150px;
+  padding: 1.5rem;
+  margin: 1.3rem 0.5rem;
+  background-color: white;
+  border-radius: 10.1639px;
+  box-shadow: 0px 4.06557px 25.4098px rgba(0, 0, 0, 0.2);
+
+  @include md {
+    width: 25vw;
+    margin: 1.3rem 1rem;
+  }
+
+  @include lg {
+    margin: 1.3rem 2rem;
+  }
+}
+
+.card-header {
+  @include flex(row);
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    width: 66px;
+    height: fit-content;
+  }
+
+  img {
+    height: 51px;
+  }
+}
+
+.card-description {
+  @extend p;
+  // padding: 0rem 2rem; not sure why this is here, commenting out for now
+}

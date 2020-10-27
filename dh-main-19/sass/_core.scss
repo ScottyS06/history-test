@@ -1,0 +1,94 @@
+// _core.scss contains materialized css rules that are needed across all pages of the site
+// this should only be imported into materialized sass files, not partials, so it is only included once
+
+@import "lib";
+
+.bgd-pale-yellow {
+  background-color: $color-yellow-pale;
+}
+
+.bgd-pale-green {
+  background-color: $color-green-pale;
+}
+
+.bgd-pale-pink {
+  background-color: $color-pink-pale;
+}
+
+.bgd-pale-purple {
+  background-color: $color-purple-pale;
+}
+
+.bgd-pale-peach {
+  background-color: $color-peach-pale;
+}
+
+h1 {
+  font-family: $font-title;
+  font-weight: 900;
+  font-size: $font-size-4;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: $font-title;
+  font-weight: 900;
+  font-size: $font-size-3;
+  letter-spacing: 1px;
+}
+
+h3 {
+  @include justContent;
+  font-family: $font-title;
+  font-weight: 900;
+  font-size: $font-size-2;
+}
+
+h5 {
+  @include justContent;
+  margin: 0 !important;
+  font-size: $font-size-1;
+}
+
+p {
+  font-size: $font-size-1;
+  font-family: $font-text;
+}
+
+// specific styling
+
+html,
+body {
+  // set font-sizes to REM units to use the scaling set to root font size
+  min-height: 100%;
+  min-width: 100%;
+  overflow-x: hidden; // allows translation css animations without destorying the elements
+  margin: 0;
+  font-size: 14px;
+
+  @include md {
+    font-size: 16px;
+  }
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.desktop-only {
+  @include desktopOnly(block);
+}
+
+.desktop-only-flex {
+  @include desktopOnly(flex);
+}
+
+.mobile-only {
+  @include mobileOnly(block);
+}
+
+.noscroll {
+  overflow: hidden;
+}

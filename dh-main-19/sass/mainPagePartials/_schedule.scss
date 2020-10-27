@@ -1,0 +1,161 @@
+@import "../lib";
+
+.schedule-section {
+  h2 {
+    font-size: $font-size-5;
+    color: $color-blue;
+    margin-top: 0;
+
+    @include lg {
+      font-size: 3rem;
+    }
+  }
+
+  .date {
+    font-size: $font-size-2;
+    margin: 0.5rem 0;
+    font-weight: 600;
+  }
+
+  .events-container {
+    margin-top: 1rem;
+
+    .event {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 300;
+      margin: 8px 0;
+      padding: 0.25rem 0;
+
+      .event-name,
+      .event-time {
+        font-family: $font-text;
+      }
+    }
+  }
+
+  .schedule-desktop {
+    @include centerCol;
+    @include desktopOnly(flex);
+    // display: flex; added by desktopOny mixin
+    margin: 15vh 0 10vh 0;
+    justify-content: space-between;
+
+    @include lg {
+      padding: 0 5rem !important;
+    }
+
+    .pane {
+      width: 45%;
+      margin: 0 2rem;
+    }
+
+    .calday {
+      border-top: 8px solid $color-pink;
+      width: 100%;
+
+      h3 {
+        color: $color-pink;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        font-size: $font-size-5;
+      }
+    }
+  }
+
+  .schedule-mobile {
+    margin-top: 5vh;
+    @include mobileOnly(block);
+
+    .date {
+      @include sm-max {
+        font-size: 1rem !important;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      width: 100%;
+      font-size: 1.75rem !important;
+    }
+
+    #day-selector {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      .day {
+        width: 50%;
+        outline: none;
+        border: none;
+        background: transparent;
+        padding: 0;
+        padding-bottom: 0px;
+        padding-bottom: 1.5rem;
+
+        font-size: $font-size-3;
+        font-weight: 900;
+        color: $color-pink;
+        font-family: $font-title;
+
+        opacity: 0.5;
+        border-bottom: 1px #d8d8d8 solid;
+
+        cursor: pointer;
+
+        transition: 0.2s all ease-in-out;
+
+        &:hover,
+        &.active {
+          opacity: 1;
+        }
+
+        @include sm-max {
+          font-size: 1.25rem;
+        }
+      }
+
+      #active-day-marker {
+        width: 50%;
+        height: 10%;
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        background-color: $color-pink;
+
+        transition: all 0.2s ease-in-out;
+
+        &.day2 {
+          left: 50%;
+        }
+      }
+    }
+
+    #day-panes {
+      position: relative;
+
+      .calday {
+        @include centerCol(2rem);
+        transition: all 0.2s ease-in-out;
+        position: absolute;
+        // display: none;
+
+        &.active {
+          position: relative;
+          transform: translateX(0) !important;
+          display: block;
+        }
+      }
+
+      #day1-pane {
+        transform: translateX(-1000%);
+      }
+
+      #day2-pane {
+        transform: translateX(1000%);
+      }
+    }
+  }
+}

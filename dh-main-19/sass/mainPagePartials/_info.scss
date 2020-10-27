@@ -1,0 +1,100 @@
+@import "../lib";
+
+// info view uses card-group from lib, overload card group here versus changing it there
+
+.info-section {
+  .info-header {
+    @include page-flex(column);
+    @include centerCol;
+    background-color: $color-blue;
+    position: relative;
+    margin-top: 10vw;
+    padding: 0 5rem 2rem 5rem !important;
+
+    @include sm-max {
+      padding: 0 1.5rem 2rem 1.5rem !important;
+    }
+
+    &::before {
+      content: " ";
+      background-image: url("../assets/wave-imgs/bluewave-clip.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 13vw; // the 12 value is the aspect ratio of the wave
+      top: -12.6vw;
+      left: 0;
+      width: 100vw;
+      position: absolute;
+    }
+
+    &::after {
+      content: " ";
+      background-color: $color-blue;
+      height: 10vh;
+      width: 100vw;
+      position: absolute;
+      bottom: -9.9vh;
+      left: 0;
+      z-index: -1;
+
+      // display: none;
+    }
+
+    @include md {
+      &::after {
+        display: block;
+      }
+    }
+
+    .info-view-text {
+      color: white;
+      line-height: 25px;
+
+      h2 {
+        margin: 0 0 2rem 0;
+        padding-top: 2vh;
+        font-size: $font-size-4;
+        line-height: 3rem;
+
+        @include sm-max {
+          font-size: 2rem;
+          margin-top: 2rem;
+        }
+      }
+
+      @include md {
+        max-width: 600px !important;
+      }
+    }
+
+    p {
+      font-weight: 400;
+    }
+    @include sm-max {
+      margin-top: 5rem;
+    }
+  }
+
+  .card-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $color-blue;
+    @include centerCol;
+    padding-bottom: 2rem;
+
+    @include md {
+      background-color: transparent;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      color: $color-blue;
+      font-weight: 800;
+    }
+  }
+}

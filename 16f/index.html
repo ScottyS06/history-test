@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<meta property="og:title" content="DubHacks Fall 2016" />
+	  <meta property="og:site_name" content="DubHacks"/>
+	  <meta property="og:url" content="http://16f.dubhacks.co/" />
+	  <meta property="og:image" content="http://16f.dubhacks.co/images/fb_link.png" />
+	  <meta property="og:description" content="Join us at the University of Washington to build the next generation of innovative software and hardware hacks." />
+	  <meta property="description" content="Join us at the University of Washington to build the next generation of innovative software and hardware hacks." />
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
+		<script src="https://use.fontawesome.com/09a02fca2b.js"></script>
+
+		<link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen">
+		<script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css">
+		<script type="text/javascript" src="css/slick/slick.min.js"></script>
+
+
+
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="icon" href="images/final_logo.png">
+		<script>
+			function scrollTo(headerName) {
+				 $('html, body').animate({scrollTop:$(headerName).position().top}, 300);
+			}
+		</script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+
+		<title>DubHacks Fall 2016</title>
+	</head>
+	<body>
+
+		<ul id="navbar_container">
+
+
+			<div id="color_band"></div>
+			<li><a onclick="scrollTo('#header_container')"><img id="navbar_dubhacks_logo" src="images/dubhacks_logo_white.svg"></a></li>
+			<!-- <li><img id="navbar_dubhacks_logo" src="images/dubhacks_logo_white.svg"></li> -->
+			<li class="in_page_links"><a onclick="scrollTo('#faq_container')">FAQ</a></li>
+			<li class="in_page_links"><a onclick="scrollTo('#sponsor_container')">Sponsors</a></li>
+			<li class="in_page_links"><a href="/team">Team</a></li>
+			<li class="navbar_contact_link" id="fb">
+				<a target="_fb" href="https://www.facebook.com/DubHacks-1497687910461792/"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+			</li>
+			<li class="navbar_contact_link" id="twitter">
+				<a target="_twit" href="https://twitter.com/DubHacks?lang=en"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+			</li>
+			<li class="navbar_contact_link"  id="mail">
+				<a href="mailto:info@dubhacks.co"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+			</li>
+			<a id="nav-mlh-trust-badge" style="display:inline;max-width:100px;min-width:60px;position:relative;top:-13px;width:10%;z-index:10000;height:0;visibility:hidden;opacity:0;" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+		</ul>
+		<div id="header_container">
+			<div>
+				<section class="carousel">
+					<div class="carousel-cell panel-1">
+						<img src="images/panels/health_panel.png" alt="">
+						<h2>Ingrain values at the core of everything we do.</h2>
+					</div>
+					<div class="carousel-cell panel-2">
+						<img src="images/panels/social_justice_panel.png" alt="">
+						<h2>Desire to uplift and empower humanity.</h2>
+					</div>
+					<div class="carousel-cell panel-3">
+						<img src="images/panels/diversity_panel.png" alt="">
+						<h2>Unify collective experiences and perspectives.</h2>
+					</div>
+					<div class="carousel-cell panel-4">
+						<img src="images/panels/accessibility_panel.png" alt="">
+						<h2>Harness unique abilities to push us forward.</h2>
+					</div>
+					<div class="carousel-cell panel-5">
+						<img src="images/panels/environment_panel.png" alt="">
+						<h2>Innovate for a better tomorrow.</h2>
+					</div>
+					<div class="carousel-cell panel-6">
+						<img src="images/panels/education_panel.png" alt="">
+						<h2>Cultivate ingenuity to impact the world.</h2>
+					</div>
+				</section>
+			</div>
+			<div id="content">
+				<div id="logo-join-sponsor">
+					<div class="box button box-with-shadow">
+						<a href="/volunteer">Volunteer</a>
+					</div>
+					<img id="big_dubhacks_logo_no_spin" src="images/dubhacks_logo_white.svg">
+					<div class="box button box-with-shadow">
+						<a href="http://dubhacks.co/sponsor">Sponsor</a>
+					</div>
+				</div>
+				<div id="date-box" class="box button box-with-shadow">
+					<span id="date">October 15-16, 2016</span>
+					<span id="venue">University of Washington</span>
+					<span id="city">Seattle</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="mission_container">
+			<div class="believe_connect_build">
+			    <div id="our_mission_title">Our Mission</div>
+			    <div id="believe">Believe. Connect. Build.</div>
+			    <ul id="airplane_container">
+			    	<li><img id="plane_1" src="images/plane01.png"></li>
+			    	<li><img id="plane_2" src="images/plane02.png"></li>
+			    	<li><img id="plane_3" src="images/plane03.png"></li>
+			    </ul>
+			    <div id="statement">
+                <ul>
+                    <li id="mission1">We <b>believe</b> in empowering and enriching humanity. </li>
+                    <li id="mission2">We <b>connect</b> people and new perspectives to promote </li>
+                    <li id="mission3">inclusion, diversity, and accessibility. </li>
+                    <li>We <b>build</b> solutions for problems worth solving, together. </li>
+                </ul>
+          </div>
+		</div>
+	</div>
+		<div id="faq_container">
+			<div id="faq_flat_section">
+				<h1>Frequently Asked Questions</h1>
+			</div>
+			<div id="faq-list-section">
+				<div class="faq_column">
+					<div>
+						<h2>What is DubHacks?</h2>
+						<p>
+							DubHacks is a 24-hour collegiate hackathon held at the University of Washington in Seattle. We believe technology has the power to spark positive social change in our communities. Our mission is to promote inclusion, diversity, and accessibility in everything we do. We gather undergraduate students of all backgrounds to bridge the gap between technology and social advocacy in hopes to inspire individuals to build creative tools that can be used to tackle society's biggest issues. Our community welcomes everyone, including all levels of programming skills. We encourage all students to join, as there will be mentors to help teach you about new technologies.
+						</p>
+					</div>
+					<div>
+						<h2>Who can attend?</h2>
+						<p>
+							We are all different people from different places with our own unique perspectives. This is why we welcome and encourage undergraduate students of all backgrounds to join us. Unfortunately we are unable to admit high school students. Applications are now closed.
+						</p>
+					</div>
+					<div>
+						<h2>What about travel reimbursment?</h2>
+						<p>
+							Distance should not be a barrier. Travel reimbursement will be provided for certain individuals depending on their need.
+						</p>
+					</div>
+					<div>
+						<h2>How much does this cost?</h2>
+						<p>
+							DubHacks has noted the power of bringing together people and ideas to create new solutions. Because of this, all the essentials such as food and internet will be completely free for the weekend, allowing participants to focus on their projects.
+
+						</p>
+					</div>
+					<div>
+						<h2>What should I bring?</h2>
+						<p>
+							Besides motivation and passion to intertwine social impact and technology, participants should bring a laptop, charger, and their student ID. A toothbrush, sleeping bag, and a change of clothes is recommended.
+
+						</p>
+					</div>
+					<div>
+						<h2>How big are the teams?</h2>
+						<p>
+							To take advantage of our diverse community, we encourage you to work with individuals you do not know. We will have team formation activities in the weeks leading up to the event to facilitate this process. However, teams can be a maximum of 5 people.
+
+						</p>
+					</div>
+					<div>
+						<h2>What should I build?</h2>
+						<p>
+							We want to inspire participants to develop creative tools that can be used to tackle society’s biggest issues. That could be a project for, Health, Social Justice, Diversity, Accessibility, Environment, Education or any other social area you choose.
+
+						</p>
+					</div>
+					<div>
+						<h2>Are we allowed to build on past projects?</h2>
+						<p>
+							This experience is meant to build on something completely new. With that in mind, you cannot work on past projects. Using your own APIs or third-party APIs is alright as long as the project is a fresh start.
+						</p>
+					</div>
+					<div>
+						<h2>Will you have hardware equipment to use?</h2>
+						<p>
+							Yes. Our partners at MLH will have limited stock of Oculus Rifts, Myo armbands, Leap Motions, Arduinos, 3D printers and more to loan out to attendees at our event.
+						</p>
+					</div>
+					<div>
+						<h2>I have a different question. Who can I ask?</h2>
+						<p>
+							Reach out to us at via Twitter, Facebook, or send an email to <a id="infolink" href="mailto:info@dubhacks.co">info@dubhacks.co</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="schedule_container">
+			<div id="schd_flat_section">
+				<h1>Schedule</h1>
+			</div>
+			<div id="schd-section">
+				<div class="schd_column">
+					<div class="day_section">
+						<div class="day_title">October 15th</div>
+						<div class="day_subtitle">Saturday</div>
+						<div id="day1_context"></div>
+					</div>
+					<div class="day_section">
+						<div class="day_title">October 16th</div>
+						<div class="day_subtitle">Sunday</div>
+						<div id="day2_context"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="sponsor_container">
+			<div id="sponsor_flat_section">
+				<h1>Sponsors</h1>
+			</div>
+			<div id="logo_container">
+				<div>
+				    <a href="https://careers.microsoft.com/students" target="_blank"><img class="plat_logo" src="images/sponsor_logos/color_msft_logo.png"></a>
+				</div>
+				<div>
+				    <a href="http://www.qualtrics.com" target="_blank"><img class="gold_logo" src="images/sponsor_logos/color_qualtrics_logo.png"></a>
+				    <a href="http://disneytechjobs.com/" target="_blank"><img class="gold_logo" src="images/sponsor_logos/white_disney_logo.png"></a>
+				</div>
+				<div>
+				    <a href="http://google.com" target="_blank"><img class="silver_logo" src="images/sponsor_logos/white_google_logo.svg"></a>
+				    <a href="https://a16z.com" target="_blank"><img class="silver_logo" src="images/sponsor_logos/white_a16z_logo.png"></a>
+				    <a href="https://www.facebook.com/careers" target="_blank"><img class="silver_logo" src="images/sponsor_logos/white_fb_logo.png"></a>
+				    <a href="http://www.libertymutualcampus.com" target="_blank"><img class="silver_logo" src="images/sponsor_logos/white_libertymutual_logo.png"></a>
+				    <a href="www.zillow.com/jobs" target="_blank"><img class="silver_logo" src="images/sponsor_logos/white_zillow_logo.png"></a>
+				    <a href="https://www.blueorigin.com" target="_blank"><img class="silver_logo" src="images/sponsor_logos/color_blue_origin.png"></a>
+					<a href="https://catalyst.amazon.com/" target="_blank"><img class="silver_logo" src="images/sponsor_logos/amazon_color_logo.png"></a>
+					<a href="https://www.clarifai.com/careers" target="_blank"><img class="silver_logo" src="images/sponsor_logos/color_clarifai.png"></a>
+				</div>
+				<div>
+				    <a href="https://nc.me" target="_blank"><img id="namecheap" class="bronze_logo" src="http://15f.dubhacks.co/images/company_logos/namecheap.png"></a>
+				    <a href="https://www.soylent.com" target="_blank"><img class="bronze_logo" src="images/sponsor_logos/color_soylent_logo.png"></a>
+				    <a href="https://www.waopportunityscholarship.org/new-applicants/overview" target="_blank"><img class="bronze_logo" src="images/sponsor_logos/color_wsos_logo.png"></a>
+				    <a href="https://bonsaimediagroup.com/" target="_blank"><img class="bronze_logo" src="images/sponsor_logos/white_bonsai_logo.png"></a>
+					<a href="http://foster.uw.edu/centers/buerk-ctr-entrepreneurship/" target="_blank"><img class="bronze_logo" src="images/sponsor_logos/buerk_logo.png"></a>
+					<a href="http://tune.com/" target="_blank"><img class="bronze_logo" src="images/sponsor_logos/color_tune_logo.png"></a>
+					<a href="https://algorithmia.com/" target="_blank"><img class="bronze_logo" src="images/sponsor_logos/color_algorithmia_logo.png"></a>
+					<a href="http://www.cray.com" target="_blank"><img class="bronze_logo" id="cray" src="images/sponsor_logos/white_cray_logo.png"></a>
+					<a href="https://gix.uw.edu/" target="_blank"><img class="bronze_logo" src="images/sponsor_logos/gix_color_logo.png"></a>
+					<a href="http://alexa.amazon.com/" target="_blank"><img class="bronze_logo" src="images/sponsor_logos/alexa_color_logo.png"></a>
+					<a href="https://rapidapi.com" target="_blank"><img class="bronze_logo" src="images/sponsor_logos/color_rapidapi.png"></a>
+				</div>
+				<h1>Partners</h1>
+				<div id="partner_container">
+				    <a class="partner_logo" href="https://mlh.io/seasons/na-2017/events" target="_blank"><img id="mlh" src="images/sponsor_logos/color-mlh-logo.svg"></a>
+				    <a href="http://comotion.uw.edu/" target="_blank"><img class="partner_logo" src="images/sponsor_logos/color_comotion_logo.png"></a>
+					<a href="http://startupseattle.com/" target="_blank"><img class="partner_logo" src="images/sponsor_logos/color_startupSeattle_logo.png"></a>
+					<a href="http://hackharassment.com/" target="_blank"><img class="partner_logo" src="images/sponsor_logos/white_HH_logo.png"></a>
+					<a href="http://kinspire.org/" target="_blank"><img class="partner_logo" src="images/sponsor_logos/white_kinspire.png"></a>
+					<a href="http://washingtonmesa.org/mission/" target="_blank"><img class="partner_logo" src="images/sponsor_logos/color_mesa.png"></a>
+				</div>
+			</div>
+		</div>
+		<div id="footer_container">
+			<img id="skyline" src="images/skyline.svg">
+			<img id="footer_airplane" src="images/airplane.svg">
+
+			<div id="footer_content">
+				<div id="social_media_logos">
+					<div id="date-box" class="box button">
+						<span id="date">October 15-16, 2016</span>
+						<span id="venue">University of Washington</span>
+						<span id="city">Seattle</span>
+					</div>
+				</div>
+				<img id="big_dubhacks_logo" src="images/dubhacks_logo_white.svg">
+				<div id="meet_team">
+					<a href="/team"><h3>Our Team</h3></a>
+				</div>
+			</div>
+
+			<div id="contact_footer_bar">
+				<div><a target="_mail" href="mailto:info@dubhacks.co">contact us</a></div>
+				<div id="links"> <a href="http://dubhacks.co/codeofconduct">code of conduct</a> | <a href="http://dubhacks.co/2014">2014</a> | <a href="http://dubhacks.co/2015">2015</a></div>
+			</div>
+		</div>
+		<script>
+	      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	      ga('create', 'UA-61585600-2', 'auto');
+	      ga('send', 'pageview');
+	    </script>
+	</body>
+	<script src="js/script.js"></script>
+	<script src="js/schedule.js"></script>
+	<script src="js/navbar.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.carousel').slick({
+				dots: true,
+				infinite: true,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				speed: 5000,
+				pauseOnHover: false,
+				pauseOnDotsHover: true
+			});
+		});
+	</script>
+</html>

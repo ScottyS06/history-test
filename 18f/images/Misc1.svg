@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="186px" height="169px" viewBox="0 0 186 169" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Misc1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Misc1" transform="translate(0.000000, 1.000000)" stroke="#ED1973">
+            <g id="Group">
+                <path d="M0.5,42.5 C0.5,39.36 2.57,36.23 6.71,33.84 C15,29.05 28.43,29.05 36.71,33.84 C40.85,36.23 42.92,39.36 42.93,42.49 L42.93,72.49 M42.93,72.49 C42.93,75.63 40.86,78.76 36.71,81.16 C28.43,85.94 15,85.94 6.71,81.16 C2.57,78.77 0.5,75.63 0.5,72.5 L0.5,42.5" id="Shape" stroke-width="0.93" fill="#9988F8" fill-rule="nonzero"></path>
+                <path d="M21.71,54.75 C33.4239595,54.75 42.92,49.2654882 42.92,42.5 C42.92,35.7345118 33.4239595,30.25 21.71,30.25 C9.99604046,30.25 0.5,35.7345118 0.5,42.5 C0.5,49.2654882 9.99604046,54.75 21.71,54.75 Z" id="Oval" stroke-dasharray="4"></path>
+                <ellipse id="Oval" stroke-width="0.93" fill="#755EF8" fill-rule="nonzero" cx="21.71" cy="12.5" rx="21.21" ry="12.25"></ellipse>
+                <path d="M0.5,14.25 L0.5,44.25" id="Shape" stroke-dasharray="4"></path>
+                <path d="M42.92,14.25 L42.92,44.25" id="Shape" stroke-dasharray="4"></path>
+            </g>
+            <g id="Group-2" transform="translate(98.000000, 77.000000)">
+                <polygon id="Shape" fill="#755EF8" fill-rule="nonzero" points="52.41 0.25 17.76 20.25 52.41 40.25 87.05 20.25"></polygon>
+                <polygon id="Shape" fill="#B8AEF8" fill-rule="nonzero" points="0.44 30.25 0.44 70.25 35.08 90.25 35.08 50.25"></polygon>
+                <polygon id="Shape" fill="#9988F8" fill-rule="nonzero" points="87.05 20.25 52.41 40.25 52.4 80.25 87.04 60.25"></polygon>
+                <path d="M17.76,20.25 L0.44,30.25" id="Shape" stroke-dasharray="4"></path>
+                <path d="M52.41,40.25 L35.08,50.25" id="Shape" stroke-dasharray="4"></path>
+                <path d="M52.4,80.25 L35.08,90.25" id="Shape" stroke-dasharray="4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

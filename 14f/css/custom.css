@@ -1,0 +1,381 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v12/2tsd397wLxj96qwHyNIkxHYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v12/vzIUHo9z-oJ4WgkpPOtg13YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v12/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v12/Hgo13k-tfSpn0qi1SFdUfbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v12/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v12/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v12/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v12/d-6IYplOFocCacKzxwXSOLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+/* Start styling the page */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+::selection {
+    background-color: #4b549e;
+    color: #fff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #4b549e;
+    font-size: 16pt
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear
+}
+
+.jumbotron p, p {
+    font-size: 0.9em;
+    line-height: 1.8em;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, h2 a {
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear
+}
+
+p.tagline {
+    font-size: 1.25em;
+    color: #fff;
+    margin-bottom: 1.5em;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+}
+
+h1.blurb {
+    font-weight: 700;
+    width: 50%;
+    font-size: 2.2em;
+    line-height: 1.5;
+    margin: 50px auto;
+    min-width: 320px;
+}
+
+h3.sponsor-blurb {
+    width: 60%;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 50px auto;
+    min-width: 320px;
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    line-height: normal;
+    color: #111111;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-transition: 0.2s background linear;
+    -moz-transition: 0.2s background linear;
+    transition: 0.2s background linear;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    background: #f6ca14;
+}
+
+.register, .sponsor-btn, .resume {
+    width: 15%;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.btn:hover {
+    background: #111111;
+    color: #f6ca14;
+}
+
+.buttonLink {
+    margin: 20px;
+    display: inline-block;
+}
+
+/***********************************/
+/* Style the page as a whole */
+.page-wrapper {
+    position: relative;
+    left: 0;
+    -webkit-transition: all 0.4s ease-in 0s;
+    -moz-transition: all 0.4s ease-in 0s;
+    -ms-transition: all 0.4s ease-in 0s;
+    -o-transition: all 0.4s ease-in 0s;
+    transition: all 0.4s ease-in 0s;
+}
+
+/* Style each jumbotron */
+
+.jumbotron {
+    background: transparent;
+    text-align: center;
+    height: 100%;
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 2em 0;
+    position: relative;
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+/* Style the first jumbotron */
+
+.jumbotron#top, .jumbotron#faq {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    float: none;
+}
+
+#top > .bg {
+    z-index: -3;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: url(../images/bgs/mainbg.svg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.logo {
+    width: 30%;
+    min-width: 200px;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+/* Styling all other jumbotrons */
+
+.details, .faq, .sponsor, {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    float: none;
+}
+
+.jumbotron#faq, .footer {
+    content: "";
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.faq {
+    z-index: 100;
+}
+
+.img-bg {
+    color: #ffffff;
+}
+
+.blank-bg {
+    background: #ffffff;
+    color: #4b549e;
+}
+
+.blank-bg a {
+    color: #4b549e;
+}
+
+.blank-bg a:hover {
+    color: #4b549e;
+}
+
+.jumb-padding {
+    padding: 2em 1em;
+}
+
+.sponsor {
+    padding: 0 1em;
+}
+
+.sponsor img {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.sponsor-logo.platinum {
+    width: 30em;
+}
+
+.sponsor-logo.gold {
+    width: 15em;
+}
+
+.sponsor-logo.silver {
+    width: 10em;
+}
+
+.sponsor-logo.bronze, .sponsor-logo.partner {
+    width: 10em;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.arrow a i {
+    color: #fff
+}
+
+.row {
+    margin: 30px auto;
+    padding: 0 auto;
+}
+
+.row strong {
+    font-size: 1.2em;
+}
+
+.social {
+    background: rgba(51, 51, 51, 0.5);
+    border-radius: 0 0 0 5px;
+    padding: 5px;
+    height: 30px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.twitter-follow-button {
+    display: block;
+    float: left;
+}
+
+.fb-like {
+    float: left;
+    display: table !important;
+    height: 20px !important;
+    width: auto !important;
+    margin-right: 10px;
+    top: -10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 4em 1em;
+}
+
+.footer > p.small {
+    font-size: 50%;
+}
+
+.fa-heart {
+    color: #e74c3c;
+}
+
+ul.why-join-us {
+    list-style-type: none;
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+ul.why-join-us > li > .fa {
+    margin-right: 10px;
+}
+
+/* iphone landscape and portrait */
+@media only screen and (max-width : 568px) {
+    body {
+        font-size: 13pt;
+    }
+
+    .tagline {
+        font-size: 1.25em;
+    }
+    .arrow {
+        font-size: 0.5em;
+    }
+    h1.blurb {
+        font-size: 1.8em;
+    }
+    .jumb-padding {
+        padding: 0;
+    }
+    h3.sponsor-blurb {
+        font-size: 1em;
+        line-height: 1.5;
+        min-width: 100%;
+    }
+}

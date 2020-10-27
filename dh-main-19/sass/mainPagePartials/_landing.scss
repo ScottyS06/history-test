@@ -1,0 +1,85 @@
+@import "../lib";
+
+.mainView {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin: 0 $horiMargin;
+  margin-bottom: 4vh;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+  }
+
+  img {
+    max-width: 60vw;
+    align-self: center;
+    margin: 0 auto;
+    padding: 2rem;
+
+    @include sm {
+      max-width: auto;
+      max-height: 60vh;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .mainview-text {
+    @include flex(column);
+    color: $color-blue;
+    font-family: $font-text;
+    align-self: flex-start;
+    padding-bottom: 1rem;
+
+    @include sm {
+      align-self: center;
+      padding: 0;
+      padding-left: 1rem;
+    }
+
+    @include xl {
+      padding-left: 0px;
+    }
+
+    h1 {
+      font-size: $font-size-6;
+      @include sm-max {
+        font-size: 2rem;
+      }
+    }
+
+    h5,
+    p {
+      max-width: 25em;
+    }
+
+    .details {
+      font-weight: bold;
+    }
+
+    button {
+      width: 170px;
+      padding: 10px 20px;
+      background-color: $color-pink;
+      border-radius: 5px;
+      font-family: $font-text;
+      color: white;
+      font-size: $font-size-1;
+      font-weight: bold;
+      border: none !important;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+      transition: scale 0.2s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        // background-color: $color-blue;
+        transform: scale(1.1);
+        // color: black;
+      }
+    }
+  }
+}
